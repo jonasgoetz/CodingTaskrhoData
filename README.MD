@@ -30,7 +30,7 @@ The project uses the following technologies:
  * Create a new Slack API App <br/> https://api.slack.com/
  * Navigate to "OAuth & Permissions"
     *  Add all the scopes described above for both Bot and User
-    *  Click on "Reinstall App"
+    *  Click on "Install to Workspace"
     *  Copy "OAuth Access Token"
  * Set up a .env file with the following content:
  ```
@@ -45,6 +45,7 @@ $ pip install -r requirements.txt
 After setting up everything successful you can run the Python script.
 #
 ### Messages from Slack.csv
+* Each time you run the Script the csv file is being overwritten
 * User, Channel or Team parameters are their Ids
 * "thread_ts" indicates a thread, so a message either has replies or is a reply 
 * "thread_ts" is the unique id that describes the time when the first response was posted
